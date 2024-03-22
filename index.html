@@ -9,12 +9,19 @@
 <body>
 <div class="container">
   <h1>Agendamento de Barbearia</h1>
-  <div class="calendar">
-    <input type="date" id="datePicker">
-    <input type="time" id="timePicker">
-    <button onclick="agendar()">Agendar</button>
+  <div id="loginForm" class="hidden">
+    <input type="text" id="username" placeholder="Nome de usuário">
+    <input type="password" id="password" placeholder="Senha">
+    <button onclick="login()">Login</button>
   </div>
-  <div id="mensagem"></div>
+  <div id="agendaForm" class="hidden">
+    <div class="calendar">
+      <input type="date" id="datePicker">
+      <input type="time" id="timePicker">
+      <button onclick="agendar()">Agendar</button>
+    </div>
+    <div id="mensagem"></div>
+  </div>
 </div>
 <script src="script.js"></script>
 </body>
