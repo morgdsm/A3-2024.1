@@ -9,11 +9,20 @@
 <body>
 <div class="container">
   <h1>Agendamento de Barbearia</h1>
+  <div id="cadastroForm" class="hidden">
+    <h2>Cadastro</h2>
+    <input type="text" id="cadastroUsername" placeholder="Nome de usuário">
+    <input type="password" id="cadastroPassword" placeholder="Senha">
+    <input type="password" id="confirmarPassword" placeholder="Confirmar senha">
+    <button onclick="cadastrar()">Cadastrar</button>
+  </div>
   <div id="loginForm" class="hidden">
+    <h2>Login</h2>
     <input type="text" id="username" placeholder="Nome de usuário">
     <input type="password" id="password" placeholder="Senha">
     <button onclick="login()">Login</button>
   </div>
+  <div class="spacer"></div>
   <div id="agendaForm" class="hidden">
     <div class="calendar">
       <input type="date" id="datePicker">

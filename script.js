@@ -9,14 +9,12 @@ function agendar() {
       document.getElementById("mensagem").innerText = "Por favor, selecione uma data e hora.";
     }
   }
-//teste
+
 function login() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
   
-    // Aqui você pode adicionar a lógica de autenticação
-    // Por exemplo, verificar se o nome de usuário e senha estão corretos
-    // Esta é apenas uma implementação básica de demonstração
+  
     if (username === "admin" && password === "123456") {
       document.getElementById("loginForm").classList.add("hidden");
       document.getElementById("agendaForm").classList.remove("hidden");
@@ -36,4 +34,21 @@ function login() {
       document.getElementById("mensagem").innerText = "Por favor, selecione uma data e hora.";
     }
   }
-  
+
+  function cadastrar() {
+  var cadastroUsername = document.getElementById("cadastroUsername").value;
+  var cadastroPassword = document.getElementById("cadastroPassword").value;
+  var confirmarPassword = document.getElementById("confirmarPassword").value;
+
+  if (cadastroUsername && cadastroPassword && confirmarPassword) {
+    if (cadastroPassword === confirmarPassword) {
+      // Se as senhas coincidem, você pode proceder com o cadastro
+      alert("Cadastro realizado com sucesso!");
+      // Aqui você pode adicionar lógica para salvar os detalhes do usuário, como em um banco de dados
+    } else {
+      alert("As senhas não coincidem. Por favor, tente novamente.");
+    }
+  } else {
+    alert("Por favor, preencha todos os campos.");
+  }
+}
