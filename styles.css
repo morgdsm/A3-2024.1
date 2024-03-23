@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #141414;
     margin: 0;
     padding: 0;
   }
@@ -24,7 +24,7 @@ body {
   
   button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #FFC700;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -32,7 +32,7 @@ body {
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #E6B300;
   }
   
   #mensagem {
