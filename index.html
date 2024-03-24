@@ -1,39 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agendamento de Barbearia</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Barbearia</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
 <div class="container">
-  <h1>Agendamento de Barbearia</h1>
-  <div id="cadastroForm" class="hidden">
-    <h2>Cadastro</h2>
-    <input type="text" id="cadastroUsername" placeholder="Nome de usuário">
-    <input type="password" id="cadastroPassword" placeholder="Senha">
-    <input type="password" id="confirmarPassword" placeholder="Confirmar senha">
-    <button onclick="cadastrar()">Cadastrar</button>
-  </div>
-
-
-  <div id="loginForm" class="hidden">
-    <h2>Login</h2>
-    <input type="text" id="username" placeholder="Nome de usuário">
-    <input type="password" id="password" placeholder="Senha">
-    <button onclick="login()">Login</button>
-  </div>
-  <div class="spacer"></div>
-  <div id="agendaForm" class="hidden">
-    <div class="calendar">
-      <input type="date" id="datePicker">
-      <input type="time" id="timePicker">
-      <button onclick="agendar()">Agendar</button>
-    </div>
-    <div id="mensagem"></div>
-  </div>
+    <h1>Agendamento de Barbearia</h1>
+    <form id="appointment-form">
+        <input type="text" id="nome" placeholder="Nome completo" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="tel" id="telefone" placeholder="Telefone" required>
+        <select id="servico" required>
+            <option value="" disabled selected>Selecione o serviço desejado</option>
+            <option value="Corte de Cabelo">Corte de Cabelo</option>
+            <option value="Barba">Barba</option>
+            <option value="Corte e Barba">Corte e Barba</option>
+                    </select>
+        <input type="date" id="data" required>
+        <input type="time" id="hora" required>
+        <input type="submit" value="Agendar">
+    </form>
+    <div id="error-message" class="error-message"></div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
