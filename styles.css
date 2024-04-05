@@ -139,6 +139,7 @@ section{
 }
 
 #servicos{
+    scroll-margin-top: 40px;
     display: flex;
     padding: 0;
     justify-content: center;
@@ -165,10 +166,13 @@ section{
 }
 
 #equipe{
+    scroll-margin-top: 40px;
     background-color: rgb(145, 112, 112);
 }
 
 #login{
+    scroll-margin-top: 40px;
+
     background-color: rgb(145, 112, 112);
 }
 
@@ -219,45 +223,4 @@ body {
   margin: 0;
   padding: 0;
   background-color: #141414;
-}
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #141414;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-h1 {
-  text-align: center;
-  color: #fff;
-}
-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-input[type="text"], input[type="email"], input[type="tel"], select, input[type="date"], input[type="time"] {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #FFC700;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-input[type="submit"]:hover {
-  background-color: #d6ae1a;
-}
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
 }
