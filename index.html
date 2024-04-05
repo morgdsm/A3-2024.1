@@ -1,32 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento de Barbearia</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Barba and Beer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
 </head>
+
+<nav>
+    <ul>       
+
+        <a href="#inicio" class="logo"><h1>Barba and Beer</h1></div>
+
+        <div class="roll">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#login">Login</a></li>
+        </div>
+
+    </ul>
+</nav>
+
 <body>
 
-<div class="container">
-    <h1>Agendamento de Barbearia</h1>
-    <form id="appointment-form">
-        <input type="text" id="nome" placeholder="Nome completo" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="tel" id="telefone" placeholder="Telefone" required>
-        <select id="servico" required>
-            <option value="" disabled selected>Selecione o serviço desejado</option>
-            <option value="Corte de Cabelo">Corte de Cabelo</option>
-            <option value="Barba">Barba</option>
-            <option value="Corte e Barba">Corte e Barba</option>
-                    </select>
-        <input type="date" id="data" required>
-        <input type="time" id="hora" required>
-        <input type="submit" value="Agendar">
-    </form>
-    <div id="error-message" class="error-message"></div>
-</div>
+    <section id="inicio">
+        <div class="titulo">
 
-<script src="script.js"></script>
+            <img src="IMG/IMAGEM PAG INICIAL.png" class="tesoura">
+            <a href="" class="btn-agende">AGENDE SEU HORÁRIO</a>
+            <div class="gradient"></div>
+
+        </div>           
+    </section>
+
+    <section id="servicos">
+        
+        <div class="titulo2">
+
+            <h1 class="tit2">O que oferecemos?</h1>
+            <h2 class="subtit2">tudo para trazer a melhor experiencia</h2>
+
+        </div>
+    </section>
+
+    <section id="equipe">Equipe
+    </section>
+
+    <section id="contato">Contato        
+    </section>
+
+    <section id="login">
+        <div class="container">
+            <h1>Agendamento de Barbearia</h1>
+            <form id="appointment-form">
+                <input type="text" id="nome" placeholder="Nome completo" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+                <select id="servico" required>
+                    <option value="" disabled selected>Selecione o serviço desejado</option>
+                    <option value="Corte de Cabelo">Corte de Cabelo</option>
+                    <option value="Barba">Barba</option>
+                    <option value="Corte e Barba">Corte e Barba</option>
+                            </select>
+                <input type="date" id="data" required>
+                <input type="time" id="hora" required>
+                <input type="submit" value="Agendar">
+            </form>
+            <div id="error-message" class="error-message"></div>
+        </div>
+    </section>
+
 </body>
 </html>
