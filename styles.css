@@ -114,7 +114,6 @@ section{
     font-size: 20px;
     font-weight: 800;
     border: none;
-    border-radius: 8px;
     padding: 20px 40px;
     outline: none;
     position: relative;
@@ -204,7 +203,6 @@ section{
   background-image: url(/IMG/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
 }
 
 .serv1::after{
@@ -213,7 +211,6 @@ section{
   height: 100%;
   position: 50px 50px;
   background-color: #242424;
-  border-radius: 15px;
   opacity: 0%;
   transition: 0.75s;
 }
@@ -245,7 +242,6 @@ section{
   background-image: url(/IMG/barba.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
 }
 
 .serv2::after{
@@ -254,7 +250,6 @@ section{
   height: 100%;
   position: 50px 50px;
   background-color: #242424;
-  border-radius: 15px;
   opacity: 0%;
   transition: 0.75s;
 }
@@ -285,7 +280,6 @@ section{
   background-image: url(/IMG/beer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 15px;
 }
 
 .serv3::after{
@@ -294,7 +288,6 @@ section{
   height: 100%;
   position: 50px 50px;
   background-color: #242424;
-  border-radius: 15px;
   opacity: 0%;
   transition: 0.75s;
 }
@@ -343,6 +336,10 @@ section{
   
 }
 
+.mail{
+  text-align: center;
+}
+
 .ctt>img{
   width: 1500px;
   max-height: 180px;
@@ -351,6 +348,7 @@ section{
   opacity: 12%;
   overflow: hidden;
 }
+
 .txtba{
   color: black;
   z-index: 1;
@@ -402,7 +400,6 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
   transition: 1s;
   position: relative;
 }
@@ -415,7 +412,6 @@ section{
 .equip1>img{
   width: 100%;
   height: 100%;
-  border-radius: 15px;
 }
 
 .bar{
@@ -425,48 +421,55 @@ section{
 }
 
 .bar1{
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 208, 0);
   width: 0%;
-  height: 50px;
+  height: 100px;
   position: absolute;
   bottom: 0;
   opacity: 100%;
   transition: 0.5s;
   left:0%;
   opacity: 0%;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 .bar2{
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 208, 0);
   width: 0%;
-  height: 50px;
+  height: 100px;
   position: absolute;
   bottom: 0;
   opacity: 100%;
   transition: 0.5s;
   opacity: 0%;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 .bar3{
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 208, 0);
   width: 0%;
-  height: 50px;
+  height: 100px;
   position: absolute;
   bottom: 0;
   opacity: 100%;
   transition: 0.5s;
   right:0%;
   opacity: 0%;  
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 .nome{
   color: black;
+}
+
+.apre{
+  transition: 1s;
+  color:  black;
+  font-size: 15px;
+  opacity: 0%;
 }
 
 .equip1:hover .bar1   {
@@ -484,26 +487,39 @@ section{
   width: 100%;
 }
 
+.equip1:hover .apre   {
+  opacity: 100%;
+}
+
+.equip2:hover .apre   {
+  opacity: 100%;
+}
+
+.equip3:hover .apre   {
+  opacity: 100%;
+}
+
 .equip2>img{
   width: 100%;
   height: 100%;
-  border-radius: 15px;
 }
 
 .equip3>img{
   width: 100%;
   height: 100%;
-  border-radius: 15px;
 }
 
 #login{
-    scroll-margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(145, 112, 112);
 }
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
     padding: 20px;
     background-color: #141414;
     border-radius: 8px;
