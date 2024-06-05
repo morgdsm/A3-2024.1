@@ -177,3 +177,29 @@
 .texto_screen {
     color: #ffffff;
 }
+
+.schedules{
+    color: #ffffff
+}
+
+.schedules-container {
+    background-color: '#fff';
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+}

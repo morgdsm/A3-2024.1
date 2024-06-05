@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barba and Beer</title>
-    <link rel="stylesheet" href="/A3-2024.1/CSS/styles.css">
-    <script src="/A3-2024.1/JAVASCRIPT/script.js"></script>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script src="../JAVASCRIPT/script.js"></script>
 
 </head>
 
 <nav>
-    <ul>       
+    <ul>
 
-        <a href="#inicio" class="logo"><h1>Barba and Beer</h1></div>
+        <a href="#inicio" class="logo">
+            <h1>Barba and Beer</h1>
+            </div>
 
-        <div class="roll">
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#equipe">Equipe</a></li>
-        <li><a href="#login">Login</a></li>
-        </div>
+            <div class="roll">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#login">Login</a></li>
+            </div>
 
     </ul>
 </nav>
 
 <body>
 
-    <section id="inicio">                    
+    <section id="inicio">
         <div class="titulo">
 
-            <img src="/A3-2024.1/IMG/IMAGEM PAG INICIAL.png" class="tesoura">
+            <img src="../IMG/IMAGEM PAG INICIAL.png" class="tesoura">
             <a href="#login" class="btn-agende">AGENDE SEU HORÁRIO</a>
             <div class="gradient"></div>
 
-        </div>           
+        </div>
     </section>
 
     <section id="servicos">
-        
+
         <div class="titulo2">
 
             <h1 class="tit2">O que oferecemos?</h1>
@@ -52,7 +54,7 @@
             <div class="serv1">
                 <h1 class="txtimg1">Cabelo</h1>
             </div>
-                
+
             <div class="serv2">
                 <h1 class="txtimg2">Barba</h1>
             </div>
@@ -60,7 +62,7 @@
                 <h1 class="txtimg3">Beer</h1>
             </div>
 
-        </div> 
+        </div>
 
     </section>
 
@@ -68,11 +70,11 @@
 
         <div class="barb">
 
-        </div> 
+        </div>
 
         <div class="ctt">
 
-            <img src="/A3-2024.1/IMG/pattern1.jpg.png" alt="">
+            <img src="../IMG/pattern1.jpg.png" alt="">
 
             <div class="end txtba">
                 <h2 class="tend">Endereço</h2>
@@ -103,29 +105,31 @@
         </div>
 
         <div class="equip">
-   
+
             <div class="carde equip1">
                 <div class="bar bar1">
                     <h1 class="apre">Se você quer dar volume ou movimento <br> ao seu cabelo ele é o cara ideal</h1>
                     <h1 class="nome">Pierre</h1>
                 </div>
-                <img src="/A3-2024.1/IMG/equip1.jpg" alt="">
+                <img src="../IMG/equip1.jpg" alt="">
             </div>
-                
+
             <div class="carde equip2">
                 <div class="bar bar2">
-                    <h1 class="apre">Para degradê, fade, ou ficar na régua <br> ou qualquer um desses você pode contar com ele</h1>
+                    <h1 class="apre">Para degradê, fade, ou ficar na régua <br> ou qualquer um desses você pode contar
+                        com ele</h1>
                     <h1 class="nome">Jamal</h1>
                 </div>
-                <img src="/A3-2024.1/IMG/equip2.jpg" alt="">
+                <img src="../IMG/equip2.jpg" alt="">
             </div>
 
             <div class="carde equip3">
                 <div class="bar bar3">
-                    <h1 class="apre">Agora se é a sua barba que esta precisando <br> ser renovada pode deixar nas mãos dele</h1>
+                    <h1 class="apre">Agora se é a sua barba que esta precisando <br> ser renovada pode deixar nas mãos
+                        dele</h1>
                     <h1 class="nome">Dieguinho</h1>
                 </div>
-                <img src="/A3-2024.1/IMG/equip3.jpg" alt="">
+                <img src="../IMG/equip3.jpg" alt="">
             </div>
 
         </div>
@@ -133,22 +137,24 @@
     </section>
 
 
-    <!--Login novo-->
     <section id="login">
 
         <div class="container">
 
-            <div class="tit4"><h1>LOGIN</h1></div>
-
-            <div class="info">
-            <input type="Usuario" class="Usuario" placeholder="Usuario">
-            <input type="password" placeholder="Senha">
+            <div class="tit4">
+                <h1>LOGIN</h1>
             </div>
 
-            <input type="button" class="submit" value="Entrar">
+            <div class="info">
+                <input type="Usuario" id="email-login" class="Usuario" placeholder="Usuario">
+                <input type="password" id="password-login" placeholder="Senha">
+            </div>
+
+            <input type="button" onclick="loginUser()" class="submit" value="Entrar">
 
             <div class="entr">
-            <h1 class="link">Ainda não tem uma conta? <a href="/A3-2024.1/Telas/castro.html" class="cad">Cadastrar-se agora</a></h1>
+                <h1 class="link">Ainda não tem uma conta? <a href="../Telas/castro.html" class="cad">Cadastrar-se
+                        agora</a></h1>
             </div>
 
         </div>
@@ -156,21 +162,5 @@
     </section>
 
 </body>
-</html>
 
-<!--Login antigo-->
-<!--<input type="text" id="Usuario" placeholder="Usuario" required>
-                <form id="appointment-form">
-                <div id="error-message" class="error-message"></div>
-            </form>
-                <input type="password" id="Senha" placeholder="Senha" required>
-                <input type="tel" id="telefone" placeholder="Telefone" required>
-                <select id="servico" required>
-                    <option value="" disabled selected>Selecione o serviço desejado</option>
-                    <option value="Corte de Cabelo">Corte de Cabelo</option>
-                    <option value="Barba">Barba</option>
-                    <option value="Corte e Barba">Corte e Barba</option>
-                            </select>
-                <input type="date" id="data" required>
-                <input type="time" id="hora" required>
-                <input type="submit" value="Agendar">-->
+</html>

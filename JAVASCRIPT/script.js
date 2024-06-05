@@ -1,18 +1,32 @@
-document.getElementById("appointment-form").addEventListener("submit", function(event) {
-  var nome = document.getElementById("nome").value;
-  var email = document.getElementById("email").value;
-  var telefone = document.getElementById("telefone").value;
-  var servico = document.getElementById("servico").value;
-  var data = document.getElementById("data").value;
-  var hora = document.getElementById("hora").value;
-  var errorMessage = "";
+const url = "https://included-polliwog-powerful.ngrok-free.app"
 
-  if (nome === "" || email === "" || telefone === "" || servico === "" || data === "" || hora === "") {
-      errorMessage = "Todos os campos são obrigatórios.";
-  }
+const loginUser = async () => {
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
 
-  if (errorMessage !== "") {
-      document.getElementById("error-message").innerText = errorMessage;
-      event.preventDefault();
-  }
-});
+  var email = document.getElementById("email-login").value;
+  var password = document.getElementById("password-login").value;
+
+  const raw = JSON.stringify({
+    email,
+    password
+  });
+
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: raw,
+  };
+
+  fetch(`${url}/login/`, requestOptions)
+    .then((response) => {
+      if (response.ok)
+        response.json().then(() => {
+          window.location = '../Telas/Poslogin.html#'
+        })
+      else response.json().then(errorResult => {
+        console.log("asdasd", errorResult)
+        alert(errorResult)
+      });
+    })
+}

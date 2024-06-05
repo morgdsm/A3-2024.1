@@ -1,73 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/A3-2024.1/CSS/styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/styles3.css">
     <title>Agendamento</title>
 </head>
+
 <body id="background_pos_login">
 
     <nav id="sidebar">
         <div id="sidebar_content">
             <div id="usuario">
-                <img src="/A3-2024.1/IMG/avatar.jpg" id= "usuario_avatar" alt="avatar" width="200px">
+                <img src="../IMG/avatar.jpg" id="usuario_avatar" alt="avatar" width="200px">
                 <p id="info_usuario">
                     <span class="itemdescri">
-                        Teste 1
+                        Olá!
                     </span>
                     <span class="itemdescri">
-                        Teste 2
+                        Bem vindo.
                     </span>
                 </p>
             </div>
-    
+
             <ul id="side_items">
                 <li class="side-item" data-screen="horários">
                     <a href="#">
                         <i class="fa-solid fa-calendar-days"></i>
                         <span class="itemdescri">
                             Horários
-                        </span>  
+                        </span>
                     </a>
                 </li>
-    
-                <li class="side-item" data-screen="breja">
-                    <a href="#">
-                        <i class="fa-solid fa-beer-mug-empty"></i>
-                        <span class="itemdescri">
-                            Breja
-                        </span>  
-                    </a>
-                </li>
-    
+
                 <li class="side-item" data-screen="configuracoes">
                     <a href="#">
                         <i class="fa-solid fa-gear"></i>
                         <span class="itemdescri">
                             Configurações
-                        </span>  
+                        </span>
                     </a>
                 </li>
-    
+
+                
+
                 <li class="side-item" data-screen="equipe">
-                    <a href="#">
+                    <a href="https://github.com/morgdsm/A3-2024.1.git">
                         <i class="fa-brands fa-github"></i>
                         <span class="itemdescri">
                             Equipe
-                        </span>  
+                        </span>
                     </a>
                 </li>
             </ul>
-    
+
             <button id="abrir_barra">
                 <i id="abrir_barra_icone" class="fa-solid fa-chevron-right"></i>
             </button>
         </div>
 
         <div id="logout">
-            <button id="sair_botao">
+            <button id="sair_botao" onclick="logout()">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 <span class="itemdescri">
                     Sair
@@ -82,9 +79,9 @@
             <p class="texto_screen">Bem-vindo à página de horários.</p>
             <select id="dia-semana"></select>
             <select id="barbeiro">
-                <option value="barbeiro1">Pierre</option>
-                <option value="barbeiro2">Jamal</option>
-                <option value="barbeiro3">Dieguinho</option>
+                <option value="Pierre">Pierre</option>
+                <option value="Jamal">Jamal</option>
+                <option value="Dieguinho">Dieguinho</option>
             </select>
 
             <select id="horario">
@@ -97,13 +94,27 @@
             <label class="texto_screen" for="cabelo-barba">Corte de Cabelo e Barba</label>
             <input type="radio" id="barba" name="servico" value="barba">
             <label class="texto_screen" for="barba">Barba</label>
-            <button id="agendar">Agendar</button>
+            <button id="agendar" onclick="schedule()">Agendar</button>
+
+
+            <div class="schedules">
+                <h3>Agendamentos</h3>
+                <table class="schedules-container">
+                    <tr>
+                        <th id="schedules-barber">
+                            <h3>Barbeiro</h3>
+                        </th>
+                        <th id="schedules-date">
+                            <h3>Data</h3>
+                        </th>
+                        <th id="schedules-type">
+                            <h3>Tipo de corte</h3>
+                        </th>
+                    </tr>
+                </table>
+            </div>
         </div>
 
-        <div id="breja" class="screen">
-            <h1 class="titulo_screen">Breja</h1>
-            <p class="texto_screen">Informações sobre a Breja.</p>
-        </div>
         <div id="configuracoes" class="screen">
             <h1 class="titulo_screen">Configurações</h1>
             <p class="texto_screen">Configurações do sistema.</p>
@@ -113,6 +124,7 @@
             <p class="texto_screen">Informações sobre a equipe.</p>
         </div>
     </main>
-    <script src= "/A3-2024.1/JAVASCRIPT/ScriptPosLogin.js"></script>
+    <script src="../JAVASCRIPT/ScriptPosLogin.js"></script>
 </body>
+
 </html>

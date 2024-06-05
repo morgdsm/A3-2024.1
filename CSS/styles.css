@@ -90,7 +90,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/A3-2024.1/IMG/nathon-oski-EW_rqoSdDes-unsplash.png);
+    background-image: url(../IMG/nathon-oski-EW_rqoSdDes-unsplash.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -200,7 +200,7 @@ section{
   margin-top: 30px;
   align-items: center;
   justify-content: center;
-  background-image: url(/A3-2024.1/IMG/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg);
+  background-image: url(../IMG/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -239,7 +239,7 @@ section{
   margin-top: 30px;
   align-items: center;
   justify-content: center;
-  background-image: url(/A3-2024.1/IMG/barba.jpg);
+  background-image: url(../IMG/barba.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -277,7 +277,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/A3-2024.1/IMG/beer.jpg);
+  background-image: url(../IMG/beer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -288,7 +288,7 @@ section{
   height: 100%;
   position: 50px 50px;
   background-color: #242424;
-  opacity: 0%;
+  opacity: 80%;
   transition: 0.75s;
 }
 
@@ -310,7 +310,6 @@ section{
 
 #contato{
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   letter-spacing: 1px;
@@ -319,7 +318,7 @@ section{
 .barb{
   width: 100%;
   height: 500px;
-  background-image: url(/A3-2024.1/IMG/barber1.jpg);
+  background-image: url(../IMG/barber1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat ;
